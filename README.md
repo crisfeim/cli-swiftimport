@@ -45,7 +45,7 @@ c()
 d()
 ```
 
-Then you can pass the concatenation to the compilar to run the code:
+Then you can pass the concatenation to the compiler to run the code:
 
 ```
 tmp_file="swiftimport-$(date +"%Y%m%d-%H%M%S").swift"
