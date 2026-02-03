@@ -1,5 +1,8 @@
 # Swift import
 
+![type: cli-tool](https://img.shields.io/badge/type-cli--tool-blue.svg)
+![CI](https://github.com/crisfeim/cli-swiftimport/actions/workflows/CI.yml/badge.svg)
+
 A CLI tool that resolves import statements in Swift scripts — enabling file and folder-level inclusion to improve Swift scripting ergonomics.
 
 ![](img.png)
