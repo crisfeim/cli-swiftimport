@@ -83,18 +83,19 @@ final class FileImporterTests: XCTestCase {
     func test_import_whole_folder() throws {
         let sut = makeSUT()
         let fileURL = testSources.appendingPathComponent("import_whole_folder.swift.txt")
-        let output = try sut.scanImports(fileURL)
+        
+        let output = try sut.scanImports(fileURL).map { url in
+            url.path.components(separatedBy: "/files/").last!
+        }
         
         let expectedOutput = [
             "nested/nested/a.swift.txt",
             "nested/b.swift.txt",
             "nested/a.swift.txt",
             "import_whole_folder.swift.txt",
-        ].map {
-            testSources.appendingPathComponent($0)
-        }
+        ]
         
-        XCTAssertEqual(output,  OrderedSet(expectedOutput))
+        XCTAssertEqual(OrderedSet(output), OrderedSet(expectedOutput))
     }
 }
 

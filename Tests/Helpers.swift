@@ -3,12 +3,8 @@
 import Foundation
 
 extension Bundle {
-    var resourcesDirectory: URL {
-        bundleURL.appendingPathComponent("Contents/Resources")
-    }
-    
     var testFilesDirectory: URL {
-        resourcesDirectory.appendingPathComponent("files")
+        Bundle.module.resourceURL!.appendingPathComponent("files")
     }
 }
 
