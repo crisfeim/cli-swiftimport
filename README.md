@@ -2,6 +2,7 @@
 
 ![type: cli-tool](https://img.shields.io/badge/type-cli--tool-blue.svg)
 ![CI](https://github.com/crisfeim/cli-swiftimport/actions/workflows/CI.yml/badge.svg)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/crisfeim/cli-swiftimport)
 
 A CLI tool that resolves import statements in Swift scripts — enabling file and folder-level inclusion to improve Swift scripting ergonomics.
 
